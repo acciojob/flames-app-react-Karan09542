@@ -52,7 +52,6 @@ class App extends Component {
     return (
       <div id="main">
         {/* Do not remove the main div */}
-        {/* <form> */}
         <input
           data-testid="input1"
           name="name1"
@@ -78,10 +77,7 @@ class App extends Component {
         <button data-testid="clear" name="clear" onClick={this.reset}>
           Clear
         </button>
-        {/* </form> */}
-        {this.state.relationship && (
-          <h3 data-testid="answer">{this.state.relationship}</h3>
-        )}
+        <h3 data-testid="answer">{this.state.relationship}</h3>
       </div>
     );
   }
