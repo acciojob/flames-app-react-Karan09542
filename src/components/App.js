@@ -25,8 +25,8 @@ class App extends Component {
     });
   };
   calculateRelationship = () => {
-    let name1 = this.state.name1.toLowerCase();
-    let name2 = this.state.name2.toLowerCase();
+    let name1 = this.state.name1;
+    let name2 = this.state.name2;
     let count = 0;
 
     if(!name1 || !name2){
